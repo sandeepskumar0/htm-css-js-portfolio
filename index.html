@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKYAAACUCAMAAAAu5KLjAAAAYFBMVEX+/v4AAAD7+/vV1dXh4eHp6emZmZkICQrt7e3z8/Pl5eXPz8/4+PiMjIxMTExhYWGoqKifn59wcHAlJSXExMQwMjFCQkJYWFgdHh1oaGiysrK7vLw6Ojp7e3sSEhKEhIRoe/WzAAADWUlEQVR4nO2ayW7jMAxAqcVLrNiW90Te/v8vh5Kdtui0CTAXMQO+Q4EEPTxQEkWKAWAYhmEYhmEYhmEYhmEYhmEYhmEYhvk3zAWkjC3xGpe+gaYEJWYgrwmoOVxiO7zER1P0sS1eIqERYo1t8ZqiE2KMLfErj0OT1CITVVSVl8jcbSLLCEcT4JrM5SKQTNSxXX5DOjtV3lFUNyFsbJ1v+OsmV7YVJ900lxhOcnlTmrTa/DojW930813QCyboujvCmFWr1kUTPu6S1mUp06C4tKXRWrVj+DT2QMsSdq91d3Nv1+rcnDdXEJME68/17Opxe5ygdk6ohRIKTJJj2j2OeNuY8DUxSwxmJg7Jancmv8b2+QEM2XXFaxETUbebC7UIfiKDphhScqn8C9ImXlMMCujtxhO8IffdL7roVGyXJ/g+ooErZk3aPaRsUdOnTRfb5Cnm5u9tNQyU1xxgxryuAUrSWxOwd8zEjplzcKT3ZukzZpuAor03bbh/xlTnsU2e0vtohkIz1edXFNe+wOpybc/y7V7OOqdoKQGr9s7O6aPMFNM+F7GtfkBiP5FNfdLvwym6LZP21yitci4PLW9XKpW4/T6ey6/I5aerW452rU5tr2a7+CZ4m2NrfQODltjl8YYw3lNlJjz85DwDJj2bXh9WZ6tM3CieJIyqxub3VB3rLfOVEz3CgZGXoqlv4ekDe7jYSs/RdgqaG+XWCJSGvAyeJrbKM5IqwaverzzlIYaErcX7B2/PTb/+72hI6HwYE9SMrfKcLkwvFtHGFnlKj7sSvCbp7ujqKxHclUNLrPTwyMffYvKpqId8Ipw1tR1Db6RAkc1GyXw/R1bCV8X01vxSqLk9ntxvNVYfYU5JyNOrXOYvNdzqe43M0OouUcasn1OB2ub9dAyDKCHBTI+pwN70uXKhhitp9WoSbBgLDGvfK5eWR1gXSyuWxzBoG4xyazUcK591DblHmh7VpsbdP0a+9W4kqRPuue4iGz4mf3Xp1BFIYhlTiWMYJG5jSXUcJI+3uMzPABWtk/0VGd6J0bKhXKJ7Sj+yIt2VBRzuSrJl0CcG0xG5JPk3uqP5/PINub+FJqjtLTTBvsGPHv2taN/gCAG5KoNhGIZhGIZhGIZhGIZhGIb5f/kDnvAiGCcFt98AAAAASUVORK5CYII="/>
+</head>
+<body>
+   <nav id="desktop-nav">
+    <div class="logo">Sandeep S Kumar</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+   <nav id="sandeep-nav">
+<div class="logo">
+    Sandeep S Kumar
+</div>
+<div class="sandeep-menu">
+    <div class="sandeep-icon"  onclick="toggleMenu()">
+    <span></span>
+
+    <span></span>
+    <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    
+    </div>
+</div>
+   </nav>
+   <section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/profile-pic1.png" alt="Sandeep S Kumar Profile">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sandeep S Kumar</h1>
+        <p class="section__text__p2">TechEnthusiast | Developer</p><br>
+        <div class="btn-container">
+            <button
+            class="btn btn-color-2" onclick="window.open('./assets/sandeep.pdf')">Download CV</button>
+
+            <button
+            class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+
+        </div><br>
+        <div id="social-container">
+            <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sandeepskumar0798/'">
+        
+            <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/sandeepskumar0'">
+        </div>
+    </div>
+   </section>
+
+   <section id="about">
+   <center> <p class="section__text__p1">Get To Know More</p></center>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/about-pic1.png" alt="Profile Picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Education Icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>Fresher</p>
+ 
+                 </div>
+                <div class="details-container">
+                   <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                   <h3>Education</h3>
+                   <p>Master of Computer Application<br>Bachelor of Computer Application</p>
+
+                </div>
+            </div>
+            <div class="text-container">
+                <p>As a tech enthusiast with a master's in computer applications, I am passionate about leveraging technology to drive innovative solutions. I have expertise in .NET MVC, SQL Server, Python, and Angular, and I am always eager to learn new tools and frameworks to expand my tech prowess. My goal is to apply my skills and knowledge to cutting-edge projects that solve real-world problems and create positive impact. I am always open to new challenges and opportunities to grow and collaborate with other tech enthusiasts.</p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'"/>
+   </section>
+   <section id="experience">
+   <center> <p class="section__text__p1">Explore My</p></center>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+               
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>CSS</h3>
+                
+              </div>
+            </article>
+            
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+         
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>.NET MVC</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>PYTHON</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
+  <section id="projects">
+    <center><p class="section__text__p1">Browse My Recent</p></center>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/sportsproject.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Sports Club</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/sandeepskumar0/SportsProject'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href=''"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/caffeineproject.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Cafe System</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/sandeepskumar0/CaffeineBookatableProject'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href=''"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/itproject.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">IT Services Firm</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/sandeepskumar0/itservices'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://itservices-portal.web.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+         
+    </div>
+
+    
+    </div>
+
+
+
+    <center><p class="section__text__p1">Other Projects</p>
+        <button class="btn btn-color-1">
+            <a  style="color: #fff;"href="https://github.com/sandeepskumar0" target="_blank">Github Repo</a>
+          </button>
+          
+</center>
+
+
+    
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="contact">
+   <center> <p class="section__text__p1">Get in Touch</p></center>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:sandeepskumar0798@gmail.com">sandeepskumar0798@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/sandeepskumar0798/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Sandeep. All Rights Reserved.</p>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
